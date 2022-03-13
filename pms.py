@@ -6,7 +6,7 @@ import openpyxl
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-path = "C:/Users/Bharath/Desktop/pfms selenium.xlsx"
+path = " " #Excel file path
 
 wb = openpyxl.load_workbook(path)
 
@@ -16,9 +16,9 @@ browser = webdriver.Chrome(executable_path="C:/Users/Bharath/Desktop/chromedrive
 
 browser.get("http://samagrashiksha.in/")
 time.sleep(2)
-browser.find_element(By.ID, "txtusername").send_keys("291810")
+browser.find_element(By.ID, "txtusername").send_keys("")
 time.sleep(2)
-browser.find_element(By.ID, "txtpwd").send_keys("brckgl10")
+browser.find_element(By.ID, "txtpwd").send_keys("")
 time.sleep(5)
 browser.find_element(By.ID, "txtTuring").send_keys(input(int()))
 time.sleep(10)
